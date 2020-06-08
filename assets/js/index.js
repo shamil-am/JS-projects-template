@@ -41,5 +41,4 @@ $('.carousel-main').slick({
     prevArrow: $('#prev')
 });
 
-
 }); //ready

@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
 header{
     font-family: 'Lato', sans-serif;
     position: absolute;
@@ -333,9 +339,9 @@ main{
 
     section.services{
         .container{
-            border: 1px solid #eeeeee;
-            padding: 30px 15px 0;
-            .row{
+            .row.clip-doctor{
+                padding: 30px 15px 0;
+
                 .col-lg-4{
                     .card{
                         width: 100% !important;
@@ -358,6 +364,36 @@ main{
                         }
                         p{
                             text-align: center;
+                        }
+                    }
+                }
+            }
+            .row.experience{
+                padding: 100px 0;
+                .clip-experience{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        clip-path: polygon(3% 18%, 0 0, 20% 2%, 76% 2%, 100% 0, 97% 19%, 96% 80%, 100% 100%, 80% 96%, 18% 96%, 0 100%, 3% 82%);
+                    }
+                }
+                .about-us{
+                    padding-top: 20px;
+                    a{
+                        background-color: #396cf0;
+                        color: #ffffff;
+                        display: inline-block;
+                        border: 1px solid #396cf0;
+                        padding: 8px 30px;
+                        font-weight: bold;
+                        border-radius: 4px;
+                        transition: all 0.4s;
+                        &:hover{
+                            text-decoration: none;
+                            background-color: #333333;
+                            border: 1px solid #333333;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -410,7 +446,6 @@ main{
     left: 0;
     right:0;
     top:0;
-    // padding: 20px 178px !important;
     animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
 }
 
@@ -438,6 +473,7 @@ main{
             left: 0;
             right: 0;
             top: 0;
+            padding: 20px 15px !important;
                .col-7{
                    display: none !important;
                }
@@ -449,21 +485,26 @@ main{
             }
            }
        }
+       .active-sticky{
+           padding: 15px 20px !important;
+       }
    }
    main{
-       .carousel-main{
-           margin-top:80px;
-       }
-       .responsize{
-        height: 300px !important;
-        h1{
-            font-size: 24px !important;
+      section.carousel{
+        .carousel-main{
+            margin-top:80px;
         }
-    }
-    button{
-        height: 30px !important;
-        width: 30px !important;
-    }
+        .responsize{
+         height: 300px !important;
+         h1{
+             font-size: 24px !important;
+         }
+     }
+     button{
+         height: 30px !important;
+         width: 30px !important;
+     }
+      }
     
    }
 }
@@ -491,18 +532,20 @@ main{
         }
     }
     main{
-        .carousel-main{
-            margin-top:80px;
-        }
-        .responsize{
-            height: 300px !important;
-            h1{
-                font-size: 34px !important;
+        section.carousel{
+            .carousel-main{
+                margin-top:80px;
             }
-        }
-        button{
-            height: 34px !important;
-            width: 34px !important;
+            .responsize{
+                height: 300px !important;
+                h1{
+                    font-size: 34px !important;
+                }
+            }
+            button{
+                height: 34px !important;
+                width: 34px !important;
+            }
         }
     }
   }
@@ -521,6 +564,7 @@ main{
         }
     }
     main{
+      section.carousel{
         .carousel-main{
             margin-top:0;
         }
@@ -534,6 +578,8 @@ main{
             height: 40px !important;
             width: 40px !important;
         }
+      }
+
     }
   }
   
@@ -558,14 +604,21 @@ main{
         }
     }
     main{
-        .responsize{
-            h1{
-                font-size: 60px !important;
+        section.carousel{
+            .responsize{
+                h1{
+                    font-size: 60px !important;
+                }
+            }
+            button{
+                height: 50px !important;
+                width: 50px !important;
             }
         }
-        button{
-            height: 50px !important;
-            width: 50px !important;
+        section.services{
+            position: relative;
+            top: -140px;
+            background-color: #ffffff;
         }
     }
   
@@ -574,14 +627,25 @@ main{
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     main{
-        .responsize{
-            h1{
-                font-size: 80px !important;
+        section.carousel{
+            .responsize{
+                h1{
+                    font-size: 80px !important;
+                }
+            }
+            button{
+                height: 60px !important;
+                width: 60px !important;
             }
         }
-        button{
-            height: 60px !important;
-            width: 60px !important;
+        section.services{
+            position: relative;
+            top: -140px;
+            background-color: transparent;
+            .row.clip-doctor{
+                border: 1px solid #eeeeee;
+                background-color: #ffffff;
+            }
         }
     }
   

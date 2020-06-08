@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -409,19 +417,18 @@ main section.carousel #prev:hover {
   background-color: #007bff7e;
 }
 
-main section.services .container {
-  border: 1px solid #eeeeee;
+main section.services .container .row.clip-doctor {
   padding: 30px 15px 0;
 }
 
-main section.services .container .row .col-lg-4 .card {
+main section.services .container .row.clip-doctor .col-lg-4 .card {
   width: 100% !important;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   margin-bottom: 30px;
 }
 
-main section.services .container .row .col-lg-4 .card:hover {
+main section.services .container .row.clip-doctor .col-lg-4 .card:hover {
   -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
           box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
   background: #ffffff;
@@ -430,23 +437,67 @@ main section.services .container .row .col-lg-4 .card:hover {
           transform: translateY(-10px);
 }
 
-main section.services .container .row .col-lg-4 .card .image-clip {
+main section.services .container .row.clip-doctor .col-lg-4 .card .image-clip {
   background-color: #396cf0;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
 }
 
-main section.services .container .row .col-lg-4 .card .image-clip img {
+main section.services .container .row.clip-doctor .col-lg-4 .card .image-clip img {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
 }
 
-main section.services .container .row .col-lg-4 .card h5 {
+main section.services .container .row.clip-doctor .col-lg-4 .card h5 {
   text-align: center;
 }
 
-main section.services .container .row .col-lg-4 .card p {
+main section.services .container .row.clip-doctor .col-lg-4 .card p {
   text-align: center;
+}
+
+main section.services .container .row.experience {
+  padding: 100px 0;
+}
+
+main section.services .container .row.experience .clip-experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.services .container .row.experience .clip-experience img {
+  -webkit-clip-path: polygon(3% 18%, 0 0, 20% 2%, 76% 2%, 100% 0, 97% 19%, 96% 80%, 100% 100%, 80% 96%, 18% 96%, 0 100%, 3% 82%);
+          clip-path: polygon(3% 18%, 0 0, 20% 2%, 76% 2%, 100% 0, 97% 19%, 96% 80%, 100% 100%, 80% 96%, 18% 96%, 0 100%, 3% 82%);
+}
+
+main section.services .container .row.experience .about-us {
+  padding-top: 20px;
+}
+
+main section.services .container .row.experience .about-us a {
+  background-color: #396cf0;
+  color: #ffffff;
+  display: inline-block;
+  border: 1px solid #396cf0;
+  padding: 8px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+main section.services .container .row.experience .about-us a:hover {
+  text-decoration: none;
+  background-color: #333333;
+  border: 1px solid #333333;
+  color: #ffffff;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -517,6 +568,7 @@ main section.services .container .row .col-lg-4 .card p {
     left: 0;
     right: 0;
     top: 0;
+    padding: 20px 15px !important;
   }
   header .container .row.bottom .col-7 {
     display: none !important;
@@ -527,16 +579,19 @@ main section.services .container .row .col-lg-4 .card p {
   header .container .row.bottom #collabse-button {
     width: 40px !important;
   }
-  main .carousel-main {
+  header .active-sticky {
+    padding: 15px 20px !important;
+  }
+  main section.carousel .carousel-main {
     margin-top: 80px;
   }
-  main .responsize {
+  main section.carousel .responsize {
     height: 300px !important;
   }
-  main .responsize h1 {
+  main section.carousel .responsize h1 {
     font-size: 24px !important;
   }
-  main button {
+  main section.carousel button {
     height: 30px !important;
     width: 30px !important;
   }
@@ -560,16 +615,16 @@ main section.services .container .row .col-lg-4 .card p {
   header .container .row.bottom .col-3.appointment {
     display: none !important;
   }
-  main .carousel-main {
+  main section.carousel .carousel-main {
     margin-top: 80px;
   }
-  main .responsize {
+  main section.carousel .responsize {
     height: 300px !important;
   }
-  main .responsize h1 {
+  main section.carousel .responsize h1 {
     font-size: 34px !important;
   }
-  main button {
+  main section.carousel button {
     height: 34px !important;
     width: 34px !important;
   }
@@ -586,16 +641,16 @@ main section.services .container .row .col-lg-4 .card p {
   header .container .row.bottom {
     position: static;
   }
-  main .carousel-main {
+  main section.carousel .carousel-main {
     margin-top: 0;
   }
-  main .responsize {
+  main section.carousel .responsize {
     height: 750px !important;
   }
-  main .responsize h1 {
+  main section.carousel .responsize h1 {
     font-size: 40px !important;
   }
-  main button {
+  main section.carousel button {
     height: 40px !important;
     width: 40px !important;
   }
@@ -619,23 +674,37 @@ main section.services .container .row .col-lg-4 .card p {
   header .container .row.bottom .col-12.collabse-menu {
     display: none !important;
   }
-  main .responsize h1 {
+  main section.carousel .responsize h1 {
     font-size: 60px !important;
   }
-  main button {
+  main section.carousel button {
     height: 50px !important;
     width: 50px !important;
+  }
+  main section.services {
+    position: relative;
+    top: -140px;
+    background-color: #ffffff;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  main .responsize h1 {
+  main section.carousel .responsize h1 {
     font-size: 80px !important;
   }
-  main button {
+  main section.carousel button {
     height: 60px !important;
     width: 60px !important;
+  }
+  main section.services {
+    position: relative;
+    top: -140px;
+    background-color: transparent;
+  }
+  main section.services .row.clip-doctor {
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
   }
 }
 /*# sourceMappingURL=index.css.map */
