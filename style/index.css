@@ -285,11 +285,11 @@ header .container .row.bottom .collabse-menu a i {
   margin-top: -2px;
 }
 
-main .carousel {
+main section.carousel {
   position: relative;
 }
 
-main .carousel .slick-active h1 {
+main section.carousel .slick-active h1 {
   -webkit-animation-name: tomiddle;
           animation-name: tomiddle;
   -webkit-animation-duration: 1.5s;
@@ -298,7 +298,7 @@ main .carousel .slick-active h1 {
           animation-fill-mode: forwards;
 }
 
-main .carousel .we-are-always {
+main section.carousel .we-are-always {
   height: 750px;
   background-image: url("../image/1.jpg");
   background-position: center center;
@@ -309,9 +309,8 @@ main .carousel .we-are-always {
   position: relative;
 }
 
-main .carousel .we-are-always h1 {
+main section.carousel .we-are-always h1 {
   position: absolute;
-  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -324,7 +323,7 @@ main .carousel .we-are-always h1 {
   opacity: 0;
 }
 
-main .carousel .best-care {
+main section.carousel .best-care {
   height: 750px;
   background-image: url("../image/2.jpg");
   background-position: center center;
@@ -335,9 +334,8 @@ main .carousel .best-care {
   position: relative;
 }
 
-main .carousel .best-care h1 {
+main section.carousel .best-care h1 {
   position: absolute;
-  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -350,7 +348,7 @@ main .carousel .best-care h1 {
   opacity: 0;
 }
 
-main .carousel .we-are-always3 {
+main section.carousel .we-are-always3 {
   height: 750px;
   background-image: url("../image/3.jpg");
   background-position: center center;
@@ -361,9 +359,8 @@ main .carousel .we-are-always3 {
   position: relative;
 }
 
-main .carousel .we-are-always3 h1 {
+main section.carousel .we-are-always3 h1 {
   position: absolute;
-  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -376,7 +373,7 @@ main .carousel .we-are-always3 h1 {
   opacity: 0;
 }
 
-main .carousel #next {
+main section.carousel #next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -390,11 +387,11 @@ main .carousel #next {
   outline: none;
 }
 
-main .carousel #next:hover {
+main section.carousel #next:hover {
   background-color: #007bff7e;
 }
 
-main .carousel #prev {
+main section.carousel #prev {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -408,8 +405,48 @@ main .carousel #prev {
   outline: none;
 }
 
-main .carousel #prev:hover {
+main section.carousel #prev:hover {
   background-color: #007bff7e;
+}
+
+main section.services .container {
+  border: 1px solid #eeeeee;
+  padding: 30px 15px 0;
+}
+
+main section.services .container .row .col-lg-4 .card {
+  width: 100% !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-bottom: 30px;
+}
+
+main section.services .container .row .col-lg-4 .card:hover {
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+main section.services .container .row .col-lg-4 .card .image-clip {
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+}
+
+main section.services .container .row .col-lg-4 .card .image-clip img {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+}
+
+main section.services .container .row .col-lg-4 .card h5 {
+  text-align: center;
+}
+
+main section.services .container .row .col-lg-4 .card p {
+  text-align: center;
 }
 
 @-webkit-keyframes fadeInDown {

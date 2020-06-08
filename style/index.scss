@@ -223,7 +223,7 @@ header{
 }
 
 main{
-    .carousel{
+    section.carousel{
         position: relative;
         .slick-active{
             h1{
@@ -243,7 +243,6 @@ main{
             position: relative;
             h1{
                 position: absolute;
-                top: 80%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 color: #ffffff;
@@ -266,7 +265,6 @@ main{
             position: relative;
             h1{
                 position: absolute;
-                top: 80%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 color: #ffffff;
@@ -290,7 +288,6 @@ main{
             position: relative;
             h1{
                 position: absolute;
-                top: 80%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 color: #ffffff;
@@ -300,7 +297,6 @@ main{
                 margin: 0;
                 width: 100%;
                 opacity: 0;
-
             }
         }
         #next{
@@ -335,6 +331,39 @@ main{
         }
     }
 
+    section.services{
+        .container{
+            border: 1px solid #eeeeee;
+            padding: 30px 15px 0;
+            .row{
+                .col-lg-4{
+                    .card{
+                        width: 100% !important;
+                        transition: all 0.4s;
+                        margin-bottom: 30px;
+                        &:hover{
+                            box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+                            background: #ffffff;
+                            border-color: #ffffff;
+                            transform: translateY(-10px);
+                        }
+                        .image-clip{
+                            background-color: #396cf0;;
+                            clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+                            img{
+                            clip-path : polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);                            }
+                        }
+                        h5{
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 

@@ -34,8 +34,8 @@ $(".under-menu-opener").click( (e) => {
 $('.carousel-main').slick({
     arrows: true,
     infinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
     draggable: false,
     nextArrow: $('#next'),
     prevArrow: $('#prev')
