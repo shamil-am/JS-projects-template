@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $(document).scroll(() => {
         let diff = window.scrollY;
         if (diff > 170) {
@@ -24,12 +23,12 @@ $(document).ready(function () {
 
 $("#collabse-button").click( () => {
     $(".collabse-menu").slideToggle();
-})
+});
 
 $(".under-menu-opener").click( (e) => {
     e.preventDefault();
     $(e.currentTarget).next('.under-menu').slideToggle();
-})
+});
 
 $('.carousel-main').slick({
     arrows: true,
@@ -48,13 +47,44 @@ $("#video-play").click( (e) => {
     $(".videoscreen").fadeIn();
     $(".clinic-frame").fadeIn();
     $(".close-video").fadeIn();
-})
+     $(".nume").counterUp({delay:10,time:1000});
+
+});
 $(".close-video").click( (e) => {
     e.preventDefault();
     $(".videoscreen").fadeOut();
     $("iframe").attr("src","");
     $(".clinic-frame").fadeOut();
     $(".close-video").hide();
-})
+});
+
+let a = 0;
+$(window).scroll(function() {
+
+  let oTop = $('.statistic').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.nume').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+    });
+    a = 1;
+  }
+});
+
 
 }); //ready

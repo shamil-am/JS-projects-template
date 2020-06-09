@@ -623,6 +623,44 @@ main{
         }
     }
 
+    section.statistic{
+        padding: 100px 0;
+        .single-counter{
+            text-align: center;
+            i{
+                color: #396cf0;
+                font-size: 45px;
+            }
+            h3{
+                font-size: 40px;
+                margin: 20px 0 6px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .videoscreen{
         position: absolute;
         height: 9999px;

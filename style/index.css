@@ -787,6 +787,28 @@ main section.watch-our-video .row.video .clinic-video .close-video:hover {
   color: #ffffff;
 }
 
+main section.statistic {
+  padding: 100px 0;
+}
+
+main section.statistic .single-counter {
+  text-align: center;
+}
+
+main section.statistic .single-counter i {
+  color: #396cf0;
+  font-size: 45px;
+}
+
+main section.statistic .single-counter h3 {
+  font-size: 40px;
+  margin: 20px 0 6px;
+}
+
+main section.statistic .single-counter p {
+  font-size: 17px;
+}
+
 main .videoscreen {
   position: absolute;
   height: 9999px;
