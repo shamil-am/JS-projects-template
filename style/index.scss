@@ -469,7 +469,7 @@ main{
         background-color: #f9faff;
         padding-top: 100px;
         padding-bottom: 50px;
-        .row.dapartments-header{
+        .row.sect-head{
             margin-bottom: 70px;
             h2{
                 text-align: center;
@@ -539,16 +539,120 @@ main{
             }
         }
     }
+
+    section.watch-our-video{
+        padding: 100px 0;
+        background-color: rgba(0, 0, 255, 0.356);
+        .sect-head{
+            h2,p{
+                color: #ffffff;
+                &:before{
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .row.video{
+            .clinic-video{
+                background-image: url(../image/video-image.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+                background-color: #00000067;
+                height: 450px;
+                max-width: 750px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                position: relative;
+                border-radius: 5px;
+                .play{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    a{
+                        display: flex;
+                        height: 100px;
+                        width: 100px;
+                        background-color: #ffffff;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        transition: all 0.4s;
+                        animation: pulse 2s linear infinite;;
+                        &:hover{
+                            background-color: #396cf0 ;
+                            animation: none;
+                            i{
+                                color: #ffffff;
+                            }
+                        }
+                        i{
+                            font-size: 35px;
+                            color: #396cf0;
+                            transition: all 0.4s;
+                        }
+                    }
+                }
+                iframe{
+                    top:0;
+                    right:0;
+                    bottom:0;
+                    left:0;
+                    position: absolute;
+                    z-index:98;
+                    display:none;
+                }
+                .close-video{
+                    color: silver;
+                    position: absolute;
+                    z-index:98;
+                    top:-30px;
+                    right:0;
+                    transition: all .4s;
+                    display:none;
+                    i{
+                        font-size: 24px;
+                    }
+                    &:hover{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .videoscreen{
+        position: absolute;
+        height: 9999px;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 97;
+        background-color: rgba(0, 0, 0, 0.808);
+        display: none;
+        .videoself{
+            position: relative;
+            top: 3000px;
+        }
+    }
 }
 
 
 
 
-
-
-
-
-
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(247, 195, 9, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 0 150px rgba(247, 195, 9, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247, 195, 9, 0);
+    }
+  }
 
 @keyframes bagMove {
     0% {
@@ -568,7 +672,6 @@ main{
        transform: translateY(0);
     }
  }
-
 
 @keyframes fadeInDown {
     0% {
@@ -592,8 +695,6 @@ main{
     }
  }
 
-
-
 .active-sticky{
     position: fixed !important;
     left: 0;
@@ -606,14 +707,33 @@ main{
     color: #396cf0 !important;
 }
 
-
-
-
-
-
-
-
-
+.sect-head{
+            margin-bottom: 70px;
+            h2{
+                text-align: center;
+                margin-bottom: 40px;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -20px;
+                    width: 10%;
+                    height: 3px;
+                    margin: 0 auto;
+                    background: #396cf0;
+                   
+                    border-radius: 5px;
+                }
+            }
+            p{
+                text-align: center;
+                max-width: 700px;
+                margin: 0 auto 0;
+                width: 100%;
+            }
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -816,18 +936,3 @@ main{
     }
   
   }
-
-//   /* Extra Extra large devices (large desktops, 1600px and up) */
-//   @media only screen and (min-width: 1600px) {
-//     .active-sticky{
-//         position: fixed;
-//         left: 0;
-//         right:0;
-//         top:0;
-//         padding: 20px 178px !important;
-//         animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
-//         .navigator li{
-//             margin: 0px 24px !important;
-//         }
-//     }
-//   }

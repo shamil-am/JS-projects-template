@@ -41,4 +41,20 @@ $('.carousel-main').slick({
     prevArrow: $('#prev')
 });
 
+
+$("#video-play").click( (e) => {
+    e.preventDefault();
+    $("iframe").attr("src","https://www.youtube.com/embed/LFBxRxwY4Qw?autoplay=1");
+    $(".videoscreen").fadeIn();
+    $(".clinic-frame").fadeIn();
+    $(".close-video").fadeIn();
+})
+$(".close-video").click( (e) => {
+    e.preventDefault();
+    $(".videoscreen").fadeOut();
+    $("iframe").attr("src","");
+    $(".clinic-frame").fadeOut();
+    $(".close-video").hide();
+})
+
 }); //ready

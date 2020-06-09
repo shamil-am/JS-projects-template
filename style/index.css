@@ -595,17 +595,17 @@ main section.our-departments {
   padding-bottom: 50px;
 }
 
-main section.our-departments .row.dapartments-header {
+main section.our-departments .row.sect-head {
   margin-bottom: 70px;
 }
 
-main section.our-departments .row.dapartments-header h2 {
+main section.our-departments .row.sect-head h2 {
   text-align: center;
   margin-bottom: 40px;
   position: relative;
 }
 
-main section.our-departments .row.dapartments-header h2:before {
+main section.our-departments .row.sect-head h2:before {
   content: '';
   position: absolute;
   left: 0;
@@ -618,7 +618,7 @@ main section.our-departments .row.dapartments-header h2:before {
   border-radius: 5px;
 }
 
-main section.our-departments .row.dapartments-header p {
+main section.our-departments .row.sect-head p {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 0;
@@ -682,6 +682,155 @@ main section.our-departments .row.all-departments .single-department .department
 
 main section.our-departments .row.all-departments .single-department .department-content p {
   margin: 0;
+}
+
+main section.watch-our-video {
+  padding: 100px 0;
+  background-color: rgba(0, 0, 255, 0.356);
+}
+
+main section.watch-our-video .sect-head h2, main section.watch-our-video .sect-head p {
+  color: #ffffff;
+}
+
+main section.watch-our-video .sect-head h2:before, main section.watch-our-video .sect-head p:before {
+  background-color: #ffffff;
+}
+
+main section.watch-our-video .row.video .clinic-video {
+  background-image: url(../image/video-image.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  background-color: #00000067;
+  height: 450px;
+  max-width: 750px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+main section.watch-our-video .row.video .clinic-video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main section.watch-our-video .row.video .clinic-video .play a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: pulse 2s linear infinite;
+          animation: pulse 2s linear infinite;
+}
+
+main section.watch-our-video .row.video .clinic-video .play a:hover {
+  background-color: #396cf0;
+  -webkit-animation: none;
+          animation: none;
+}
+
+main section.watch-our-video .row.video .clinic-video .play a:hover i {
+  color: #ffffff;
+}
+
+main section.watch-our-video .row.video .clinic-video .play a i {
+  font-size: 35px;
+  color: #396cf0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+main section.watch-our-video .row.video .clinic-video iframe {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 98;
+  display: none;
+}
+
+main section.watch-our-video .row.video .clinic-video .close-video {
+  color: silver;
+  position: absolute;
+  z-index: 98;
+  top: -30px;
+  right: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: none;
+}
+
+main section.watch-our-video .row.video .clinic-video .close-video i {
+  font-size: 24px;
+}
+
+main section.watch-our-video .row.video .clinic-video .close-video:hover {
+  color: #ffffff;
+}
+
+main .videoscreen {
+  position: absolute;
+  height: 9999px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 97;
+  background-color: rgba(0, 0, 0, 0.808);
+  display: none;
+}
+
+main .videoscreen .videoself {
+  position: relative;
+  top: 3000px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(247, 195, 9, 0.8);
+            box-shadow: 0 0 0 0 rgba(247, 195, 9, 0.8);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0 150px rgba(247, 195, 9, 0);
+            box-shadow: 0 0 0 150px rgba(247, 195, 9, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(247, 195, 9, 0);
+            box-shadow: 0 0 0 0 rgba(247, 195, 9, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(247, 195, 9, 0.8);
+            box-shadow: 0 0 0 0 rgba(247, 195, 9, 0.8);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0 150px rgba(247, 195, 9, 0);
+            box-shadow: 0 0 0 150px rgba(247, 195, 9, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(247, 195, 9, 0);
+            box-shadow: 0 0 0 0 rgba(247, 195, 9, 0);
+  }
 }
 
 @-webkit-keyframes bagMove {
@@ -789,6 +938,36 @@ main section.our-departments .row.all-departments .single-department .department
 
 .now-here {
   color: #396cf0 !important;
+}
+
+.sect-head {
+  margin-bottom: 70px;
+}
+
+.sect-head h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.sect-head h2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 10%;
+  height: 3px;
+  margin: 0 auto;
+  background: #396cf0;
+  border-radius: 5px;
+}
+
+.sect-head p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 0;
+  width: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
