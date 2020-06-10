@@ -905,6 +905,14 @@ main{
           position: relative;
         .news-carousel{
             .single-news{
+                border: 1px solid #eeeeee;
+                transition: all .4s;
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+                    background: #ffffff;
+                    border-color: #ffffff;
+                }
                 div.news-image{
                     img{
                         clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
@@ -1001,6 +1009,54 @@ main{
             }
         }
       }
+    }
+
+    section.join-our-newsletter{
+        background-image: url(../image/newsletter-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: color-burn;
+        background-color: #5182ff;
+        padding: 50px 0;
+        clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
+        .row.sect-head{
+            color: #ffffff;
+            h2{
+                &:before{
+                    background-color: #ffffff ;
+                }
+            }
+        }
+        .row.email{
+            text-align: center;
+            form{
+                position: relative;
+                input{
+                    width: 50%;
+                    background-color: #fff;
+                    border:none;
+                    outline: none;
+                    padding: 15px 60px 15px 20px;
+                    border-radius: 20px;
+                }
+                button{
+                    position: absolute;
+                    right: 26%;
+                    top: 25%;
+                    transform: rotate(40deg);
+                    color: #5182ffc7;
+                    background-color: transparent;
+                    &:focus{
+                        outline: none;
+                    }
+                    i{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
     }
 
 

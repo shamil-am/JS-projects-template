@@ -1139,6 +1139,21 @@ main section.latest-news .row.sect-bottom {
   position: relative;
 }
 
+main section.latest-news .row.sect-bottom .news-carousel .single-news {
+  border: 1px solid #eeeeee;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
 main section.latest-news .row.sect-bottom .news-carousel .single-news div.news-image img {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
@@ -1255,6 +1270,62 @@ main section.latest-news .row.sect-bottom #news-prev {
 main section.latest-news .row.sect-bottom #news-prev:hover {
   background-color: #007bffda;
   color: #ffffff;
+}
+
+main section.join-our-newsletter {
+  background-image: url(../image/newsletter-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color-burn;
+  background-color: #5182ff;
+  padding: 50px 0;
+  -webkit-clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
+          clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
+}
+
+main section.join-our-newsletter .row.sect-head {
+  color: #ffffff;
+}
+
+main section.join-our-newsletter .row.sect-head h2:before {
+  background-color: #ffffff;
+}
+
+main section.join-our-newsletter .row.email {
+  text-align: center;
+}
+
+main section.join-our-newsletter .row.email form {
+  position: relative;
+}
+
+main section.join-our-newsletter .row.email form input {
+  width: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 60px 15px 20px;
+  border-radius: 20px;
+}
+
+main section.join-our-newsletter .row.email form button {
+  position: absolute;
+  right: 26%;
+  top: 25%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  color: #5182ffc7;
+  background-color: transparent;
+}
+
+main section.join-our-newsletter .row.email form button:focus {
+  outline: none;
+}
+
+main section.join-our-newsletter .row.email form button i {
+  font-size: 24px;
 }
 
 main .videoscreen {
