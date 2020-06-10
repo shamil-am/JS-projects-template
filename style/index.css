@@ -400,12 +400,14 @@ main section.carousel #next {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 25px;
+  right: 50px;
   background-color: transparent;
   height: 50px;
   width: 50px;
   color: #ffffffa2;
-  border-radius: 50%;
+  border: 1px solid #ffffffa2;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   outline: none;
 }
 
@@ -418,12 +420,14 @@ main section.carousel #prev {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 25px;
+  left: 50px;
   background-color: transparent;
   height: 50px;
   width: 50px;
   color: #ffffffa2;
-  border-radius: 50%;
+  border: 1px solid #ffffffa2;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   outline: none;
 }
 
@@ -1559,6 +1563,12 @@ main .videoscreen .videoself {
     display: none !important;
   }
   main #patient-next {
+    display: none !important;
+  }
+  main #news-prev {
+    display: none !important;
+  }
+  main #news-next {
     display: none !important;
   }
 }
