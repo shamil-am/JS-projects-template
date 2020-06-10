@@ -1167,6 +1167,10 @@ main section.latest-news .row.sect-bottom .news-carousel .single-news .news-cont
   padding: 30px 20px;
 }
 
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content h3 {
+  word-break: break-all;
+}
+
 main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content h3 a {
   color: #212529;
   line-height: 28px;
@@ -1346,6 +1350,115 @@ main .videoscreen {
 main .videoscreen .videoself {
   position: relative;
   top: 3000px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+footer .promedi p {
+  color: #666666;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+footer .promedi ul li {
+  margin: 0 6px;
+}
+
+footer .promedi ul li:first-child {
+  margin-left: 0;
+}
+
+footer .promedi ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+footer .promedi ul li a:hover {
+  background-color: #333333;
+}
+
+footer .promedi ul li a i {
+  color: #ffffff;
+}
+
+footer .quick-link h3, footer .departments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer .quick-link ul li, footer .departments ul li {
+  line-height: 2.2;
+}
+
+footer .quick-link ul li a, footer .departments ul li a {
+  color: #333333;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+footer .quick-link ul li a:hover, footer .departments ul li a:hover {
+  color: #396cf0;
+  margin-left: 6px;
+}
+
+footer .contact .contact-number, footer .contact .contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact .contact-number i, footer .contact .contact-email i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+footer .contact .contact-number p, footer .contact .contact-email p {
+  margin: 0;
+}
+
+footer .lastfoot {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #eaeaea;
 }
 
 @-webkit-keyframes pulse {
