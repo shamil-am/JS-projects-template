@@ -11,6 +11,16 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
 header {
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -809,6 +819,444 @@ main section.statistic .single-counter p {
   font-size: 17px;
 }
 
+main section.our-expert-doctors {
+  background-color: #f9faff;
+  padding: 100px 0;
+}
+
+main section.our-expert-doctors .container {
+  position: relative;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card {
+  border: 1px solid #eeeeee;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card:hover .cover-social {
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image {
+  position: relative;
+  overflow: hidden;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .image-layer {
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .image-layer img {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .cover-social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #396df0c4;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 87%, 50% 99%, 0 87%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 87%, 50% 99%, 0 87%, 0 0);
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .cover-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .cover-social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  color: #3b3535;
+  border-radius: 50%;
+  margin: 0 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .cover-social ul li a:hover {
+  background-color: #3b3535;
+  color: #fff;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .cover-social ul li a i {
+  font-size: 24px;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-about-content {
+  padding: 30px 20px;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-about-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-about-content span {
+  color: #396cf0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-about-content p {
+  color: #666666;
+  text-align: center;
+  line-height: 1.8;
+}
+
+main section.our-expert-doctors .container #expert-next {
+  position: absolute;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -10px;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.our-expert-doctors .container #expert-next:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
+main section.our-expert-doctors .container #expert-prev {
+  position: absolute;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -10px;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.our-expert-doctors .container #expert-prev:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
+main section.make-an-appointment {
+  height: 500px;
+  background-color: teal;
+}
+
+main section.patient-feedback {
+  padding: 100px 0;
+}
+
+main section.patient-feedback .container .row.sect-bottom {
+  position: relative;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback {
+  border: 1px solid #e3f6fd;
+  padding: 5px;
+  text-align: center;
+  padding: 25px;
+  background-color: #e3f6fd;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback:hover {
+  border: 1px solid #396cf0;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback:hover img {
+  border: 3px solid #396cf0 !important;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback i {
+  color: #396cf0;
+  font-size: 50px;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback p {
+  margin: 15px 0 20px;
+  line-height: 1.8;
+}
+
+main section.patient-feedback .container .row.sect-bottom .feedback-carousel .single-feedback .patient-profile img {
+  margin: 0 auto;
+  border-radius: 100%;
+  border: 3px solid #e3f6fd;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.patient-feedback .container .row.sect-bottom #patient-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.patient-feedback .container .row.sect-bottom #patient-prev:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
+main section.patient-feedback .container .row.sect-bottom #patient-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.patient-feedback .container .row.sect-bottom #patient-next:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
+main section.call-number {
+  padding: 100px 0;
+  background-color: #f9faff;
+}
+
+main section.call-number .contact-info {
+  padding: 40px;
+}
+
+main section.call-number .contact-info h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  margin: 0;
+  text-align: center;
+}
+
+main section.call-number .contact-info p {
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0 0px;
+}
+
+main section.call-number .contact-info div.contact-number {
+  font-size: 35px;
+  font-weight: bold;
+  color: #396cf0;
+  margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.call-number .contact-info div.contact-number i {
+  margin-right: 6px;
+  font-size: 30px;
+}
+
+main section.latest-news {
+  padding: 100px 0;
+}
+
+main section.latest-news .row.sect-bottom {
+  position: relative;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news div.news-image img {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content {
+  padding: 30px 20px;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content h3 a {
+  color: #212529;
+  line-height: 28px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content h3 a:hover {
+  color: #396cf0;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content ul li {
+  margin-right: 8px;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content ul li img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content ul li a:hover {
+  text-decoration: underline;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content ul li i {
+  margin-right: 6px;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content p {
+  line-height: 1.8;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content > a {
+  color: #396cf0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 16px;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content > a i {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content > a:hover {
+  cursor: pointer;
+}
+
+main section.latest-news .row.sect-bottom .news-carousel .single-news .news-content > a:hover i {
+  margin-left: 10px;
+}
+
+main section.latest-news .row.sect-bottom #news-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.latest-news .row.sect-bottom #news-next:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
+main section.latest-news .row.sect-bottom #news-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  color: #007bffde;
+  background-color: #dad3d3c0;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.latest-news .row.sect-bottom #news-prev:hover {
+  background-color: #007bffda;
+  color: #ffffff;
+}
+
 main .videoscreen {
   position: absolute;
   height: 9999px;
@@ -1029,6 +1477,18 @@ main .videoscreen .videoself {
   main section.carousel button {
     height: 30px !important;
     width: 30px !important;
+  }
+  main #expert-prev {
+    display: none !important;
+  }
+  main #expert-next {
+    display: none !important;
+  }
+  main #patient-prev {
+    display: none !important;
+  }
+  main #patient-next {
+    display: none !important;
   }
 }
 

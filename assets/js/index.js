@@ -14,6 +14,7 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () { 
+      console.log($(document).width())
         if ($(document).width() > 1140) {
             let pad = $(document).width() - 1140; 
             $(".active-sticky").css("padding-left", pad/2);
@@ -84,6 +85,110 @@ $(window).scroll(function() {
     });
     a = 1;
   }
+});
+
+
+
+$('.doctor-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: $('#expert-next'),
+  prevArrow: $('#expert-prev'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+
+  ]
+});
+
+$('.feedback-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: $('#patient-next'),
+  prevArrow: $('#patient-prev'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+
+  ]
+});
+  
+$('.news-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: $('#news-next'),
+  prevArrow: $('#news-prev'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+
+  ]
 });
 
 
