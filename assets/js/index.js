@@ -1,5 +1,9 @@
+$("body").css("display","none");
+
+
 $(document).ready(function () {
-    $(document).scroll(() => {
+  $("body").css("display","block");
+ $(document).scroll(() => {
         let diff = window.scrollY;
         if (diff > 170) {
             $(".row.bottom").slideDown().addClass("active-sticky");
@@ -168,7 +172,7 @@ $('.news-carousel').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },

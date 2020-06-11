@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 img{
     max-width: 100%;
 }
@@ -923,11 +924,12 @@ main{
                 .news-content{
                     padding: 30px 20px;
                     h3{
-                        word-break: break-all;
+                        font-size: 20px;
                         a{
                             color: #212529;
                             line-height: 28px;
                             transition: all .4s;
+                            text-overflow: ellipsis;
                             &:hover{
                                 color: #396cf0;
                             }
@@ -1062,25 +1064,6 @@ main{
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .videoscreen{
         position: absolute;
         height: 9999px;
@@ -1172,11 +1155,15 @@ footer{
             }
         }
     }
-    .lastfoot{
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
+    .lastfoot {
         border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+        .col-12{
+            
+            // display: flex;
+            // justify-content: space-between;
+           
+        }
     }
 } //footer
 
