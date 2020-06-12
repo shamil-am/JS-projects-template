@@ -347,50 +347,50 @@ main section.carousel .we-are-always .container li a:hover {
   color: #396cf0;
 }
 
-main section.cardiology {
+main section.single-doctor {
   padding: 100px 0;
 }
 
-main section.cardiology .col-lg-4 h4 {
-  font-size: 18px;
-  margin-bottom: 13px;
-  font-weight: bold;
-}
-
-main section.cardiology .col-lg-4 ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main section.cardiology .col-lg-4 ul li {
-  color: #666666;
-  margin-top: 6px;
-}
-
-main section.cardiology .col-lg-4 ul li span {
-  float: right;
-}
-
-main section.cardiology .depart-desc h3 {
+main section.single-doctor .doctor-info h4 {
   font-size: 20px;
   margin: 20px 0 15px 0;
   font-weight: bold;
 }
 
-main section.cardiology .depart-desc p {
+main section.single-doctor .doctor-info p {
   font-size: 15px;
   line-height: 28px;
   color: #666666;
   margin-bottom: 10px;
 }
 
-main section.cardiology .depart-social {
-  margin-bottom: 30px;
+main section.single-doctor .doctor-contact h4 {
+  font-size: 18px;
+  margin-bottom: 13px;
+  font-weight: bold;
 }
 
-main section.cardiology .depart-social ul li {
-  margin: 0 6px;
+main section.single-doctor .doctor-contact ul li {
+  line-height: 2;
+  color: #666666;
+}
+
+main section.single-doctor .doctor-contact ul li span {
+  float: right;
+}
+
+main section.single-doctor .doctor-contact .doctor-social {
+  margin-top: 20px;
+}
+
+main section.single-doctor .doctor-contact .doctor-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.single-doctor .doctor-contact .doctor-social ul li {
+  margin: 0 10px;
 }
 
 main section.health-care-center {
@@ -870,4 +870,4 @@ footer .lastfoot {
     background-color: #ffffff;
   }
 }
-/*# sourceMappingURL=departments.css.map */
+/*# sourceMappingURL=pages-single-doctor.css.map */
