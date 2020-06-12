@@ -18,7 +18,6 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () { 
-      console.log($(document).width())
         if ($(document).width() > 1140) {
             let pad = $(document).width() - 1140; 
             $(".active-sticky").css("padding-left", pad/2);
@@ -62,36 +61,6 @@ $(".close-video").click( (e) => {
     $(".clinic-frame").fadeOut();
     $(".close-video").hide();
 });
-
-let a = 0;
-$(window).scroll(function() {
-
-  let oTop = $('.statistic').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.nume').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-        {
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-          }
-        });
-    });
-    a = 1;
-  }
-});
-
-
 
 $('.doctor-carousel').slick({
   slidesToShow: 3,
@@ -195,5 +164,69 @@ $('.news-carousel').slick({
   ]
 });
 
+$('main').append(`<div id="to-top">
+  <a href="#"><i class="fas fa-arrow-up"></i></a>
+ </div>`);
 
+ $("#to-top").css({
+   "height": "50px",
+   "width": "50px",
+   "background-color": "#396df0ab",
+   "position": "fixed",
+   "bottom": "5%",
+   "right": "0",
+   "border-top-left-radius": "30px",
+   "border-bottom-left-radius": "30px",
+   "display": "none"
+ });
+
+ $("#to-top  i").css({
+  "font-size": "24px",
+  "color": "#ffffff",
+  "position": "absolute",
+  "top": "50%",
+  "left": "50%",
+  "transform": "translate(-50%,-50%)",
+  "padding": "14px"
+});
+$("html").css("scroll-behavior","smooth");
+
+$(document).scroll(() => {
+  let diff = window.scrollY;
+  if (diff > 100) {
+      $("#to-top").fadeIn();
+  }else{
+    $("#to-top").fadeOut();
+  }
+});
+
+// last fn
+
+let a = 0;
+$(window).scroll(function() {
+
+  let oTop = $('.statistic').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.nume').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+    });
+    a = 1;
+  }
+});
 }); //ready
