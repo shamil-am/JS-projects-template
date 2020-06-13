@@ -747,6 +747,13 @@ footer{
                 }
             }
         }
+
+  .non-pseudo{
+      &::before{
+          color: transparent !important;
+        
+      }
+  }
     }
     main{
         section.carousel{
@@ -800,5 +807,4 @@ footer{
     }
   
   };
-
 

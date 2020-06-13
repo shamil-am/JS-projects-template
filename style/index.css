@@ -864,6 +864,7 @@ main section.our-expert-doctors .container .doctor-carousel .single-doctor-card 
 }
 
 main section.our-expert-doctors .container .doctor-carousel .single-doctor-card .doctor-profile-image .image-layer img {
+  width: 100%;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
 }
@@ -1760,6 +1761,9 @@ footer .lastfoot {
   }
   header .container .row.bottom .col-12.collabse-menu {
     display: none !important;
+  }
+  header .container .non-pseudo::before {
+    color: transparent !important;
   }
   main section.carousel .responsize h1 {
     font-size: 60px !important;

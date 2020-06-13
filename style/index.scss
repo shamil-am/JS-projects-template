@@ -678,6 +678,7 @@ main{
                             background-color: #396cf0;
                             clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
                             img{
+                                width: 100%;
                                 clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
                             }
                         }
@@ -1158,12 +1159,6 @@ footer{
     .lastfoot {
         border-top: 1px solid #eaeaea;
         padding-top: 20px;
-        .col-12{
-            
-            // display: flex;
-            // justify-content: space-between;
-           
-        }
     }
 } //footer
 
@@ -1430,6 +1425,12 @@ footer{
                     display: none !important;
                 }
             }
+        .non-pseudo{
+            &::before{
+                color: transparent !important;
+                
+            }
+        }
         }
     }
     main{
@@ -1484,3 +1485,4 @@ footer{
     }
   
   }
+

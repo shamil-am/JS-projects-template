@@ -701,6 +701,12 @@ footer{
                     display: none !important;
                 }
             }
+        .non-pseudo{
+            &::before{
+                color: transparent !important;
+                
+            }
+        }
         }
     }
     main{
@@ -755,5 +761,4 @@ footer{
     }
   
   };
-
 

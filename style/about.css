@@ -1448,6 +1448,9 @@ footer .lastfoot {
   header .container .row.bottom .col-12.collabse-menu {
     display: none !important;
   }
+  header .container .non-pseudo::before {
+    color: transparent !important;
+  }
   main section.carousel .responsize h1 {
     font-size: 60px !important;
   }

@@ -2,6 +2,8 @@ $("body").css("display","none");
 
 
 $(document).ready(function () {
+  $(`a[href="about.html"]`).addClass("non-pseudo");
+  $(`a[href="contact.html"]`).addClass("non-pseudo");
   $("body").css("display","block");
  $(document).scroll(() => {
         let diff = window.scrollY;

@@ -347,130 +347,346 @@ main section.carousel .we-are-always .container li a:hover {
   color: #396cf0;
 }
 
-main section.our-doctors {
+main section.blog {
   padding: 100px 0;
 }
 
-main section.our-doctors .single-doctor-card {
-  text-align: center;
+main section.blog .container .row .single-news {
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+  height: 100%;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-main section.our-doctors .single-doctor-card:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+main section.blog .container .row .single-news:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
           box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
-main section.our-doctors .single-doctor-card:hover .image-cover {
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+main section.blog .container .row .single-news div.news-image {
+  background-color: #396cf0;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 87%, 50% 99%, 0 87%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 87%, 50% 99%, 0 87%, 0 0);
 }
 
-main section.our-doctors .single-doctor-card:hover h4 {
+main section.blog .container .row .single-news div.news-image img {
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 86%, 50% 98%, 0 86%, 0 0);
+}
+
+main section.blog .container .row .single-news .news-content {
+  padding: 30px 20px;
+}
+
+main section.blog .container .row .single-news .news-content h3 {
+  font-size: 20px;
+}
+
+main section.blog .container .row .single-news .news-content h3 a {
+  color: #212529;
+  line-height: 28px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  text-overflow: ellipsis;
+}
+
+main section.blog .container .row .single-news .news-content h3 a:hover {
   color: #396cf0;
 }
 
-main section.our-doctors .single-doctor-card .doctor-image {
+main section.blog .container .row .single-news .news-content ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+main section.blog .container .row .single-news .news-content ul li {
+  margin-right: 8px;
+}
+
+main section.blog .container .row .single-news .news-content ul li img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+main section.blog .container .row .single-news .news-content ul li a:hover {
+  text-decoration: underline;
+}
+
+main section.blog .container .row .single-news .news-content ul li i {
+  margin-right: 6px;
+}
+
+main section.blog .container .row .single-news .news-content p {
+  line-height: 1.8;
+}
+
+main section.blog .container .row .single-news .news-content > a {
+  color: #396cf0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 16px;
+}
+
+main section.blog .container .row .single-news .news-content > a i {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.blog .container .row .single-news .news-content > a:hover {
+  cursor: pointer;
+}
+
+main section.blog .container .row .single-news .news-content > a:hover i {
+  margin-left: 10px;
+}
+
+main section.blog .container .nextpage {
+  padding: 48px 0;
+}
+
+main section.blog .container .nextpage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.blog .container .nextpage ul li {
+  margin: 0 6px;
+}
+
+main section.blog .container .nextpage ul li:nth-child(2) a {
+  color: #ffffff;
+  background: #396cf0;
+}
+
+main section.blog .container .nextpage ul li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  color: #848484;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 2px 10px 0 #d8dde6;
+          box-shadow: 0 2px 10px 0 #d8dde6;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.blog .container .nextpage ul li a:hover {
+  color: #ffffff;
+  background: #396cf0;
+}
+
+main section.blog .container .search-bar {
   position: relative;
-  overflow: hidden;
+  margin-bottom: 40px;
 }
 
-main section.our-doctors .single-doctor-card .doctor-image img {
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
-          clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+main section.blog .container .search-bar input {
+  height: 45px;
+  border: 1px solid #eeeeee;
+  width: 100%;
+  padding: 0 50px 0 20px;
 }
 
-main section.our-doctors .single-doctor-card .doctor-image .image-cover {
+main section.blog .container .search-bar button {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  background-color: #396df0e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
-          clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
-  -webkit-transform: translateY(-600px);
-          transform: translateY(-600px);
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  background-color: #396cf0;
+  width: 45px;
 }
 
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul li {
-  margin: 0 10px;
-}
-
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 40px;
-  width: 40px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul li a:hover {
-  background-color: #666666;
-}
-
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul li a:hover i {
+main section.blog .container .search-bar button i {
   color: #ffffff;
 }
 
-main section.our-doctors .single-doctor-card .doctor-image .image-cover ul li a i {
-  font-size: 20px;
-  color: #396cf0;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+main section.blog .container .latest-post {
+  margin-bottom: 48px;
 }
 
-main section.our-doctors .single-doctor-card .doctor-about {
-  padding: 30px 20px;
+main section.blog .container .latest-post h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-main section.our-doctors .single-doctor-card .doctor-about h4 {
-  font-size: 20px;
+main section.blog .container .latest-post h4::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: #396cf0;
+}
+
+main section.blog .container .latest-post ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main section.blog .container .latest-post ul li .image img {
+  width: 100%;
+  height: 100%;
+}
+
+main section.blog .container .latest-post ul li .image-content {
+  padding-left: 20px;
+  width: 70%;
+}
+
+main section.blog .container .latest-post ul li .image-content p {
+  margin: 0;
+}
+
+main section.blog .container .latest-post ul li .image-content p:first-child {
+  margin-bottom: 6px;
+  color: #848484;
+  font-size: 15px;
+}
+
+main section.blog .container .latest-post ul li .image-content p:last-child a {
+  color: #000;
   font-weight: bold;
-  margin-bottom: 15px;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-main section.our-doctors .single-doctor-card .doctor-about h6 {
+main section.blog .container .latest-post ul li .image-content p:last-child a:hover {
   color: #396cf0;
-  margin-bottom: 10px;
 }
 
-main section.our-doctors .single-doctor-card .doctor-about p {
+main section.blog .container .categories {
+  margin-bottom: 48px;
+}
+
+main section.blog .container .categories h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main section.blog .container .categories h4::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: #396cf0;
+}
+
+main section.blog .container .categories ul li {
+  margin: 16px 0;
+}
+
+main section.blog .container .categories ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.blog .container .categories ul li a:hover {
+  color: #396cf0;
+  margin-left: 10px;
+}
+
+main section.blog .container .categories ul li a i {
+  margin-right: 6px;
+}
+
+main section.blog .container .popular-tags {
+  margin-bottom: 48px;
+}
+
+main section.blog .container .popular-tags h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main section.blog .container .popular-tags h4::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: #396cf0;
+}
+
+main section.blog .container .popular-tags ul li {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+main section.blog .container .popular-tags ul li a {
+  border-bottom: 3px solid #396cf0;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 6px 14px;
+  color: #333333;
+  background: #eeeeee;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.blog .container .popular-tags ul li a:hover {
+  color: #ffffff;
+  background: #396cf0;
+}
+
+main section.blog .container .quick-contact {
+  padding: 20px;
+  border: 1px solid #eeeeee;
+}
+
+main section.blog .container .quick-contact h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+main section.blog .container .quick-contact p {
+  margin-bottom: 15px;
   color: #666666;
+  font-size: 15px;
+}
+
+main section.blog .container .quick-contact a {
+  color: #396cf0;
 }
 
 main section.health-care-center {
@@ -914,7 +1130,7 @@ footer .lastfoot {
   header .container .row.bottom .col-12.collabse-menu {
     display: none !important;
   }
-  header .non-pseudo::before {
+  header .container .non-pseudo::before {
     color: transparent !important;
   }
   main section.carousel .responsize h1 {
@@ -953,4 +1169,4 @@ footer .lastfoot {
     background-color: #ffffff;
   }
 }
-/*# sourceMappingURL=pages-our-doctors.css.map */
+/*# sourceMappingURL=blog.css.map */
