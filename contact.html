@@ -229,13 +229,13 @@
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Email" name="email" id="email" class="form-control"
+                                            <input type="email" placeholder="Email" name="email" id="email" class="form-control"
                                             data-rule-required="true" data-msg-required="Please enter your email"> 
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Subject" name="subject" id="sunject"  class="form-control"
+                                            <input type="text" placeholder="Subject" name="subject" id="subject"  class="form-control"
                                             data-rule-required="true" data-msg-required="Please enter your subject">
                                         </div>
                                     </div>
@@ -332,5 +332,24 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+
+    <script>
+    $("#send-question").validate({
+    errorPlacement: function(error, element) {
+        $( "#send-question" ).effect( "shake" );
+        element.addClass("is-invalid");
+        error.insertAfter(element);
+        error.addClass("invalid-feedback").css("display","block");
+    },
+    unhighlight: function (element, errorClass) {
+        $(element).removeClass('is-invalid');
+        $(element).addClass('is-valid');
+    },
+    submitHandler: function(form) {
+        form.submit();
+    }
+    });
+    </script>
 </body>
 </html>

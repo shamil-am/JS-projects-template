@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="style/about.css">
     <title>Promedi - Medical HTML Template</title>
 </head>
@@ -292,98 +293,78 @@
                   </div>
               </div>
               <div class="row doctor-carousel">
-                 <div class="col-12">                       
-                        <div class="single-doctor-card">
-                            <div class="doctor-profile-image">
-                              <div class="image-layer">
-                                <img src="image/psychosocial-doctor.jpg" alt="">
-                              </div>
-                              <div class="cover-social">
-                                  <ul>
-                                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                  </ul>
-                              </div>
-                            </div>
-                            <div class="doctor-about-content">
-                              <h3>Dr. Jaka Alex</h3>
-                              <span>Psychosocial</span>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            </div>
-                        </div>
-                </div>
-                 <div class="col-12">
-                        <div class="single-doctor-card">
-                            <div class="doctor-profile-image">
-                                <div class="image-layer">
-                                    <img src="image/dental-doctor.jpg" alt="">
-                                </div>
-                              <div class="cover-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="doctor-about-content">
-                              <h3>Dr. Anym Jackson</h3>
-                              <span>Dental Specialist</span>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            </div>
-                        </div>
-                 </div>
-                 <div class="col-12">
-                        <div class="single-doctor-card">
-                            <div class="doctor-profile-image">
-                                <div class="image-layer">
-                                    <img src="image/cardiology-doctor.jpg" alt="">
-                                </div>
-                              <div class="cover-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="doctor-about-content">
-                              <h3>Dr. Mark Jacobson</h3>
-                              <span>Cardiology</span>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            </div>
-                        </div>
-                 </div>
-                 <div class="col-12">
-                        <div class="single-doctor-card">
-                            <div class="doctor-profile-image">
-                                <div class="image-layer">
-                                    <img src="image/heamatalogy-doctor.jpg" alt="">
-                                </div>
-                              <div class="cover-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="doctor-about-content">
-                              <h3>Dr. Alex Davidson</h3>
-                              <span>Haematology</span>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            </div>
-                        </div>
-                 </div>
               </div>
               <button id="expert-prev"><i class="fas fa-chevron-left"></i></button>
               <button id="expert-next"><i class="fas fa-chevron-right"></i></button>
           </div>
       </section>
       <section class="make-an-appointment">
-            <!-- code -->
-      </section>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 col-lg-5">
+                  <div class="contact-number">
+                      <h3>1-604-555-5555</h3>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-7">
+                  <div class="appointment-form">
+                      <h2>Make an Appointment</h2>
+                      <form action="">
+                          <div class="row">
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group"><input type="text" placeholder="Name"></div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group"><input type="text" placeholder="Email"></div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group"><input type="text" placeholder="Phone Number"></div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group">
+                                      <select>
+                                          <option>Department</option>
+                                          <option>Cardiology</option>
+                                          <option>Neurology</option>
+                                          <option>Orthopedics</option>
+                                          <option>Radiology</option>
+                                          <option>Surgery</option>
+                                          <option>Urology</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group">
+                                      <select>
+                                          <option>Doctor</option>
+                                          <option>Dr. Anym Jackson</option>
+                                          <option>Dr. Mark Jacobson</option>
+                                          <option>Dr. Alex Davidson</option>
+                                          <option>Dr. Jaka Alex</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="form-group" >
+                                      <input type="text" placeholder="Booking Date" id="booking-date">
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="form-group">
+                                      <textarea rows="4" placeholder="Message" class="w-100"></textarea>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <button>BOOK NOW</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+    </section>
       <section class="patient-feedback">
           <div class="container">
               <div class="row sect-head">
@@ -583,9 +564,9 @@
               </div>
               <div class="row email">
                <div class="col-12">
-                <form action="">
-                    <input type="text" placeholder="Enter email">
-                    <button><i class="fas fa-location-arrow"></i></button>
+                <form action="" id="email-form" novalidate>
+                    <input id="msg" type="email" placeholder="Enter email" data-rule-required="true" data-msg-required="Please enter your email correctly.">
+                    <button id="send-email"><i class="fas fa-location-arrow" aria-hidden="true"></i></button>
                 </form>
                </div>
               </div>
@@ -662,6 +643,9 @@
     <script src="assets/slick/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
 </body>
 </html>

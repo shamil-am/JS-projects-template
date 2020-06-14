@@ -407,6 +407,72 @@ main{
         }
     }
 
+    section.make-an-appointment{
+        .col-12.col-lg-5{
+            padding: 0;
+            .contact-number{
+                background-image: url(../image/appointment-left.jpg);
+                background-size: cover;
+                background-position: center center;
+                height: 100%;
+                position: relative;
+                h3{
+                    margin: 0;
+                    position: absolute;
+                    bottom: 100px;
+                    right: 0;
+                    background: rgba(47, 64, 112, 0.9);
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 35px;
+                    padding: 35px 20px;
+                }
+            }
+        }
+        .col-12.col-lg-7{
+            background-color: #396cf0;
+            .appointment-form{
+                padding: 100px 50px;
+                h2{
+                    font-size: 42px;
+                    color: #ffffff;
+                    margin-bottom: 30px;
+                }
+                form{
+                    .form-group{
+                        input,select{
+                            width: 100%;
+                            height: 45px;
+                            border-color: #ffffff;
+                            padding: 8px 15px;
+                            border-radius: 5px;
+                            border: 1px solid #ced4da;
+                        }
+                        textarea{
+                            border-color: #ffffff;
+                            padding: 8px 15px;
+                            border-radius: 5px;
+                            border: 1px solid #ced4da;
+                        }
+                    }
+                    button{
+                        background-color: #ffffff;
+                        color: #396cf0;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        border-radius: 6px;
+                        padding: 10px 20px;
+                        transition: .4s;
+                        &:hover{
+                            background-color: #333333;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     section.our-expert-doctors{
         background-color: #f9faff;
         padding: 100px 0;
@@ -538,11 +604,6 @@ main{
                 }
             }
         }
-    }
-
-    section.make-an-appointment{
-        height: 500px;
-        background-color: teal;
     }
 
     section.patient-feedback{
@@ -778,7 +839,7 @@ main{
         background-attachment: fixed;
         background-blend-mode: color-burn;
         background-color: #5182ff;
-        padding: 50px 0;
+        padding: 70px 0;
         clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
         .row.sect-head{
             color: #ffffff;
@@ -813,6 +874,15 @@ main{
                     i{
                         font-size: 24px;
                     }
+                }
+                label{
+                    position: absolute;
+                    right: 0;
+                    bottom: -70%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    color: #ffffff;
+                    margin: 0;
                 }
             }
         }
