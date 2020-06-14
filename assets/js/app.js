@@ -202,37 +202,6 @@ $(document).scroll(() => {
   }
 });
 
-// last fn
-
-let a = 0;
-$(window).scroll(function() {
-
-  let oTop = $('.statistic').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.nume').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-        {
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-          }
-        });
-    });
-    a = 1;
-  }
-});
-
-
 
 
 $("#email-form").validate({
@@ -245,5 +214,54 @@ $("#email-form").validate({
   }
 });
 
+$("#send-question").validate({
+  errorPlacement: function(error, element) {
+    $( "#send-question" ).effect( "shake" );
+    element.addClass("is-invalid");
+    error.insertAfter(element);
+    error.addClass("invalid-feedback").css("display","block");
+  },
+  unhighlight: function (element, errorClass) {
+    $(element).removeClass('is-invalid');
+    $(element).addClass('is-valid');
+},
+  submitHandler: function(form) {
+      form.submit();
+  }
+});
+
 $( "#booking-date" ).datepicker();
+
+
+
+
+// last fn
+// let a = 0;
+// $(window).scroll(function() {
+
+//   let oTop = $('.statistic').offset().top - window.innerHeight;
+//   if (a == 0 && $(window).scrollTop() > oTop) {
+//     $('.nume').each(function() {
+//       var $this = $(this),
+//         countTo = $this.attr('data-count');
+//       $({
+//         countNum: $this.text()
+//       }).animate({
+//           countNum: countTo
+//         },
+//         {
+//           duration: 2000,
+//           easing: 'swing',
+//           step: function() {
+//             $this.text(Math.floor(this.countNum));
+//           },
+//           complete: function() {
+//             $this.text(this.countNum);
+//           }
+//         });
+//     });
+//     a = 1;
+//   }
+// });
+
 }); //ready
