@@ -1002,9 +1002,74 @@ main section.our-expert-doctors .container #expert-prev:hover {
   color: #ffffff;
 }
 
-main section.make-an-appointment {
-  height: 500px;
-  background-color: teal;
+main section.make-an-appointment .col-12.col-lg-5 {
+  padding: 0;
+}
+
+main section.make-an-appointment .col-12.col-lg-5 .contact-number {
+  background-image: url(../image/appointment-left.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  position: relative;
+}
+
+main section.make-an-appointment .col-12.col-lg-5 .contact-number h3 {
+  margin: 0;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  background: rgba(47, 64, 112, 0.9);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 35px 20px;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 {
+  background-color: #396cf0;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form {
+  padding: 100px 50px;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form h2 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form form .form-group input, main section.make-an-appointment .col-12.col-lg-7 .appointment-form form .form-group select {
+  width: 100%;
+  height: 45px;
+  border-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form form .form-group textarea {
+  border-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form form button {
+  background-color: #ffffff;
+  color: #396cf0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 10px 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main section.make-an-appointment .col-12.col-lg-7 .appointment-form form button:hover {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 main section.patient-feedback {
@@ -1290,7 +1355,7 @@ main section.join-our-newsletter {
   background-attachment: fixed;
   background-blend-mode: color-burn;
   background-color: #5182ff;
-  padding: 50px 0;
+  padding: 70px 0;
   -webkit-clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
           clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
 }
@@ -1336,6 +1401,17 @@ main section.join-our-newsletter .row.email form button:focus {
 
 main section.join-our-newsletter .row.email form button i {
   font-size: 24px;
+}
+
+main section.join-our-newsletter .row.email form label {
+  position: absolute;
+  right: 0;
+  bottom: -70%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  color: #ffffff;
+  margin: 0;
 }
 
 main .videoscreen {
@@ -1680,6 +1756,13 @@ footer .lastfoot {
   main #news-next {
     display: none !important;
   }
+  main section.make-an-appointment h3 {
+    position: relative !important;
+    bottom: 0 !important;
+    font-size: 22px !important;
+    padding: 25px 0 !important;
+    text-align: center !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1712,6 +1795,13 @@ footer .lastfoot {
   main section.carousel button {
     height: 34px !important;
     width: 34px !important;
+  }
+  main section.make-an-appointment h3 {
+    position: relative !important;
+    bottom: 0 !important;
+    font-size: 22px !important;
+    padding: 25px 0 !important;
+    text-align: center !important;
   }
 }
 
@@ -1779,6 +1869,17 @@ footer .lastfoot {
   }
   main section.our-departments .single-department {
     margin: 0 40px 35px !important;
+  }
+  main section.make-an-appointment .contact-number h3 {
+    margin: 0 !important;
+    position: absolute !important;
+    bottom: 100px !important;
+    right: 0 !important;
+    background: rgba(47, 64, 112, 0.9) !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 35px !important;
+    padding: 35px 20px !important;
   }
 }
 

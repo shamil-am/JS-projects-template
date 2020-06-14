@@ -231,4 +231,19 @@ $(window).scroll(function() {
     a = 1;
   }
 });
+
+
+
+
+$("#email-form").validate({
+  errorPlacement: function(error, element) {
+    $( "#email-form" ).effect( "shake" );
+    error.insertAfter(element);
+  },
+  submitHandler: function(form) {
+      form.submit();
+  }
+});
+
+$( "#booking-date" ).datepicker();
 }); //ready
