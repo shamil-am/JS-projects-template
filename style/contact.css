@@ -442,6 +442,14 @@ main section.contact .col-12.col-lg-7 .question form .form-group button {
   font-weight: bold;
   font-size: 14px;
   border-radius: 4px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main section.contact .col-12.col-lg-7 .question form .form-group button:hover {
+  background-color: #333333;
+  border: 1px solid #333333;
+  color: #ffffff;
 }
 
 footer {
