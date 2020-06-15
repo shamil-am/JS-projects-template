@@ -878,7 +878,7 @@ main{
                 label{
                     position: absolute;
                     right: 0;
-                    bottom: -70%;
+                    bottom: -100%;
                     right: 50%;
                     transform: translateX(50%);
                     color: #ffffff;
@@ -1147,6 +1147,15 @@ footer{
     #news-next{
             display: none !important;
     }
+    section.make-an-appointment{
+        h3{
+            position: relative !important;
+            bottom: 0 !important;
+            font-size: 22px !important;
+            padding: 25px 0 !important;
+            text-align: center !important;
+        }
+    }
 
    }
 }
@@ -1187,6 +1196,15 @@ footer{
             button{
                 height: 34px !important;
                 width: 34px !important;
+            }
+        }
+        section.make-an-appointment{
+            h3{
+                position: relative !important;
+                bottom: 0 !important;
+                font-size: 22px !important;
+                padding: 25px 0 !important;
+                text-align: center !important;
             }
         }
     }
@@ -1276,7 +1294,22 @@ footer{
             .single-department{
                 margin:0 40px 35px !important;
             }
-          }
+        }
+        section.make-an-appointment{
+            .contact-number{
+                h3{
+                    margin: 0 !important;
+                    position: absolute !important;
+                    bottom: 100px !important;
+                    right: 0 !important;
+                    background: rgba(47, 64, 112, 0.9) !important;
+                    color: #ffffff !important;
+                    font-weight: bold !important;
+                    font-size: 35px !important;
+                    padding: 35px 20px !important;
+                }
+            }
+        }
     }
   
   } 

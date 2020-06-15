@@ -1406,7 +1406,7 @@ main section.join-our-newsletter .row.email form button i {
 main section.join-our-newsletter .row.email form label {
   position: absolute;
   right: 0;
-  bottom: -70%;
+  bottom: -100%;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);

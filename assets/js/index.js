@@ -39,6 +39,7 @@ $.ajax({
     $(`a[href="about.html"]`).addClass("non-pseudo");
     $(`a[href="contact.html"]`).addClass("non-pseudo");
     $("body").css("display","block");
+    $(".page-footer").load("_footer.html");
    $(document).scroll(() => {
           let diff = window.scrollY;
           if (diff > 170) {
