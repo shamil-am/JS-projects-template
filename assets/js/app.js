@@ -1,7 +1,10 @@
 $("body").css("display","none");
+$("html").append($(`<div class="loader"><div class="lds-heart"><div></div></div></div>`));
 
 
 $(document).ready(function () {
+  setTimeout(() => {
+    
   $(`a[href="about.html"]`).addClass("non-pseudo");
   $(`a[href="contact.html"]`).addClass("non-pseudo");
   $("body").css("display","block");
@@ -202,4 +205,8 @@ $(document).scroll(() => {
     $("#to-top").fadeOut();
   }
 });
+
+$("html").children(".loader").remove();
+
+  }, 2000);
 }); //ready
